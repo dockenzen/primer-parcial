@@ -2,11 +2,11 @@
 
 class Voto
 {
-	$id;
-	$dni;
-	$sexo;
-	$candidato;
-	$provincia;
+	public $id;
+	public $dni;
+	public $sexo;
+	public $candidato;
+	public $provincia;
 	
 	function __construct()
 	{
