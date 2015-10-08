@@ -9,9 +9,16 @@ switch ($queHago)
 	case 'MostrarLogin':
 		include "partes/formLogin.php";
 		break;
-		case 'MostrarFormVoto':
+	case 'MostrarFormVoto':
 		include "partes/formVoto.php";
 			break;
+	case 'GuardarVoto':
+		include "clases/voto.php";
+
+		$voto = new voto();
+		$voto->
+
+		break;
 }
 
 ?>

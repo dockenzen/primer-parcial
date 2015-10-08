@@ -9,10 +9,11 @@
         <option value="2">Massa</option>
         </select>
         
-        <input type="radio" name="radio" value="m" class="form-control" align="top" >Masculino
-        <input type="radio" name="radio" value="f" class="form-control" align="top">Femenino
+        <input type="radio" name="sexo" value="m" class="form-control" align="top" >Masculino
+        <input type="radio" name="sexo" value="f" class="form-control" align="top">Femenino
 
-        <input readonly   type="hidden"    id="id" class="form-control" >
+        
+        <input readonly   type="hidden" id="dni" class="form-control" ><!--Session ?-->
        
         <button  class="btn btn-lg btn-success btn-block" type="submit"><span class="glyphicon glyphicon-floppy-save">&nbsp;&nbsp;</span>Guardar </button>
      

@@ -66,7 +66,33 @@ function MostrarLogin()
 
 	});
 }
+function GuardarVoto()
+{
+		var provincia=$("#provincia").val();
+		var candidato=$("#candidato").val();
+		var sexo=$("#sexo").val();
+		var dni=$("#dni").val();
 
+		var funcionAjax=$.ajax({
+		url:"nexo.php",
+		type:"post",
+		data:{
+			queHacer:"GuardarVoto",
+			provincia:provincia,
+			candidato:candidato,
+			sexo:sexo,
+			dni:dni	
+		}
+	});
+	funcionAjax.done(function(retorno){
+			Mostrar("MostrarLogin");
+		$("#informe").html("cantidad de agregados "+ retorno);	
+		
+	});
+	funcionAjax.fail(function(retorno){	
+		$("#informe").html(retorno.responseText);	
+	});	
+}
 </script>
 
 </head>
