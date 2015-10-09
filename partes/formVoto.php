@@ -2,8 +2,12 @@
         <h2 class="form-ingreso-heading">Voto</h2>
         <label for="provincia" class="sr-only">Provincia</label>
         <input type="text"  minlength="6"  id="provincia" title="Se necesita una provincia" class="form-control" placeholder="Provincia" required="" autofocus="">
-        <label for="candidato" class="sr-only">Candidato</label>
-        <select id="candidato" class="form-control" autofocus="">
+        <label for="localidad" class="sr-only">Localidad</label>
+        <input type="text"  minlength="6"  id="localidad" title="Se necesita una localidad" class="form-control" placeholder="localidad" required="" autofocus="">
+        <label for="direccion" class="sr-only">Direccion</label>
+        <input type="text"  minlength="6"  id="direccion" title="Se necesita una direccion" class="form-control" placeholder="direccion" required="" autofocus="">
+        <label for="presidente" class="sr-only">Presidente</label>
+        <select id="presidente" class="form-control" autofocus="">
         <option value="0">Macri</option>
         <option value="1">Scioli</option>
         <option value="2">Massa</option>
@@ -13,7 +17,7 @@
         <input type="radio" name="sexo" value="f" class="form-control" align="top">Femenino
 
         
-        <input readonly   type="hidden" id="dni" class="form-control" ><!--Session ?-->
+        <input readonly   type="hidden" id="dni" name="dni" class="form-control" ><!--Session ?-->
        
         <button  class="btn btn-lg btn-success btn-block" type="submit"><span class="glyphicon glyphicon-floppy-save">&nbsp;&nbsp;</span>Guardar </button>
      

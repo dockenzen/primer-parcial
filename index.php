@@ -21,6 +21,10 @@
 <script type="text/javascript" src="js/funcionesAjax.js"></script>
 <script type="text/javascript" src="js/funcionesLogin.js"></script>
 <script type="text/javascript" src="js/funcionesABM.js"></script>
+<script type="text/javascript" src="js/geolocalizacionCommon.js"></script>
+<script type="text/javascript" src="js/moduloGeolocalizacion.js"></script>
+<script type="text/javascript" src="js/funcionesMapa.js"></script>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js"></script>
 <script type="text/javascript">
 function Mostrar(queMostrar)
 {
@@ -69,7 +73,9 @@ function MostrarLogin()
 function GuardarVoto()
 {
 		var provincia=$("#provincia").val();
-		var candidato=$("#candidato").val();
+		var presidente=$("#presidente").val();
+		var localidad=$("#localidad").val();
+		var direccion=$("#direccion").val();
 		var sexo=$("#sexo").val();
 		var dni=$("#dni").val();
 
@@ -79,8 +85,10 @@ function GuardarVoto()
 		data:{
 			queHacer:"GuardarVoto",
 			provincia:provincia,
-			candidato:candidato,
+			presidente:presidente,
 			sexo:sexo,
+			localidad:localidad,
+			direccion:direccion,
 			dni:dni	
 		}
 	});
@@ -112,7 +120,7 @@ function GuardarVoto()
 			<ul id="main-nav" class="clearfix">
 				<li><a onclick="MostrarLogin()" class="btn">Ingreso</a></li>
 				<li><a onclick="Mostrar('MostrarFormVoto')" class="btn">Ir a VOTACIÓN</a> </li>
-				<li><a onclick="" class="btn">Listado de Votaciones</a> </li>
+				<li><a onclick="Mostrar('MostrarFormGrilla')" class="btn">Listado de Votaciones</a> </li>
 				
 			</ul>
 			<!-- /#main-nav --> 

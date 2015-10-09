@@ -13,11 +13,21 @@ switch ($queHago)
 		include "partes/formVoto.php";
 			break;
 	case 'GuardarVoto':
-		include "clases/voto.php";
-
 		$voto = new voto();
-		$voto->
+		$voto->provincia = $_POST["provincia"];
+		$voto->candidato = $_POST["presidente"];
+		$voto->direccion = $_POST["direccion"];
+		$voto->localidad = $_POST["localidad"];
+		$voto->sexo = $_POST["sexo"];
+		$voto->dni = $_POST["dni"];
+		$voto->GuardarVoto();
+		break;
+	case 'MostrarFormGrilla':
+		include 'partes/formGrilla.php';
+			break;
 
+	case 'VerEnMapa':
+			include 'partes/formMapa.php';
 		break;
 }
 
