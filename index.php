@@ -76,8 +76,16 @@ function GuardarVoto()
 		var presidente=$("#presidente").val();
 		var localidad=$("#localidad").val();
 		var direccion=$("#direccion").val();
-		var sexo=$("#sexo").val();
+		var sexo=$("#sexo:checked").val();
 		var dni=$("#dni").val();
+
+		
+		alert(provincia);
+		alert(presidente);
+		alert(localidad);
+		alert(dni);
+		alert(sexo);
+		alert(direccion);
 
 		var funcionAjax=$.ajax({
 		url:"nexo.php",

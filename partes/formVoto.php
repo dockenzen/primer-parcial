@@ -13,8 +13,8 @@
         <option value="2">Massa</option>
         </select>
         
-        <input type="radio" name="sexo" value="m" class="form-control" align="top" >Masculino
-        <input type="radio" name="sexo" value="f" class="form-control" align="top">Femenino
+        <input type="radio" name="sexo" id="sexo" value="m" class="form-control" align="top" >Masculino
+        <input type="radio" name="sexo" id="sexo" value="f" class="form-control" align="top">Femenino
 
         
         <input readonly   type="hidden" id="dni" name="dni" class="form-control" ><!--Session ?-->
